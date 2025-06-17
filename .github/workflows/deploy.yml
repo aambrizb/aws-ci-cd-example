@@ -25,6 +25,6 @@ jobs:
 
     - name: Sync S3
       run: |
-          aws s3 sync ./ s3://${{ secrets.STATIC_BUCKET }} \
+          aws s3 sync ./ s3://${{ secrets.S3_BUCKET }} \
             --delete \
             --region ${{ secrets.AWS_REGION }}
