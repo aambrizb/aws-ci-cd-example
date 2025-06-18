@@ -14,21 +14,8 @@ AWS Example CI/CD on commit update S3 bucket
 
 | Policy        |
 |---------------|
-| SamFullAccess |
+| AmazonS3FullAccess |
 |               |
-
-## Role Policies
-
-|                       |
-|-----------------------|
-| iam:AttachRolePolicy  |
-| iam:DetachRolePolicy  |
-| iam:CreateRole        |
-| iam:TagRole           |
-| iam:GetRole           |
-| iam:DeleteRole        |
-| iam:CreatePolicy      |
-| iam:PutRolePolicy     |
 
 ## Variables 
 ### Secrets and Variables 
