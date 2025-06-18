@@ -1,17 +1,23 @@
-# static-website-ci-cd
+# AWS S3 static-website-ci-cd
 
-Ejemplo que realizar auto CI/CD en AWS S3 sirviendo un sitio estatico.
-Actualiza S3 cada que realiza push a la rama main
+AWS Example CI/CD on commit update S3 bucket
 
 
-## Policies AWS
+| Keyword | Description                    |
+|---------|--------------------------------|
+| Author  | Jesús Alejandro Ambríz Bedolla |
+| Email   | aambrizb@gmail.com             |
+| Rev     | May/2025                       |
+
+
+## Policies
 
 | Policy        |
 |---------------|
 | SamFullAccess |
 |               |
 
-# Politicas de Role
+## Role Policies
 
 |                       |
 |-----------------------|
@@ -38,10 +44,13 @@ Actualiza S3 cada que realiza push a la rama main
 | STACK_NAME               | Nombre del Stack      |
 
 
+## Push to Repository
 
 ```
 git push origin main
 ```
+
+## Result
 
 ```
 Endpoint. http://<bucket>.s3-website.<region>.amazonaws.com/
